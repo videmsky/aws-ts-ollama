@@ -169,6 +169,7 @@ const loadbalancer = new awsx.lb.ApplicationLoadBalancer("laci-ollama-lb", {
 
 const service = new awsx.ecs.FargateService("laci-ollama-fargate", {
 	cluster: cluster.arn,
+	assignPublicIp: true,
 	taskDefinitionArgs: {
 		container: {
 			name: "oi-app",
