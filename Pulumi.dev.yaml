@@ -1,0 +1,10 @@
+environment:
+  - laci-dev
+config:
+  aws-ts-ollama:instanceType: g4dn.xlarge
+  aws-ts-ollama:vpcNetworkCidr: "10.9.0.0/16"
+  aws-ts-ollama:containerPort: "8080"
+  aws-ts-ollama:cpu: "256"
+  aws-ts-ollama:memory: "512"
+  aws-ts-ollama:llm: "llama2:latest"
+  aws:region: us-west-2
