@@ -140,7 +140,7 @@ ollama pull ${llm}
 `;
 
 // Create and launch an EC2 instance into the public subnet.
-const server = new aws.ec2.Instance("laci-ollama-demo", {
+const server = new aws.ec2.Instance("laci-ollama-ec2", {
 	instanceType: instanceType,
 	subnetId: networking.subnetId,
 	vpcSecurityGroupIds: [backendSg.id],
