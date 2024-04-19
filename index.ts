@@ -9,7 +9,7 @@ const vpcNetworkCidr = config.get("vpcNetworkCidr") || "10.9.0.0/16";
 const containerPort = config.getNumber("containerPort") || 8080;
 const cpu = config.getNumber("cpu") || 256;
 const memory = config.getNumber("memory") || 512;
-const llm = config.get("llm") || "codellama:latest";
+const llm = "llama2:latest";
 
 // === Ollama Backend on EC2 ===
 // If keyName is provided, an existing KeyPair is used, else if publicKey is provided a new KeyPair

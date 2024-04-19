@@ -6,5 +6,3 @@ config:
   aws-ts-ollama:containerPort: "8080"
   aws-ts-ollama:cpu: "256"
   aws-ts-ollama:memory: "512"
-  aws-ts-ollama:llm: "codellama:latest"
-  aws:region: us-west-2
